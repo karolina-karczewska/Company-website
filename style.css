@@ -31,8 +31,7 @@ h3 {
 }
 
 p,
-a,
-input {
+a {
   font-size: 18px;
 }
 
@@ -80,7 +79,7 @@ nav {
 .header {
   position: relative;
   height: calc(100vh - 50px);
-  background-image: url("images/background-forest.png");
+  background-image: url("./images/background-forest.png");
   background-size: cover;
   background-position: center;
 }
@@ -128,18 +127,17 @@ nav {
 
 .about {
   width: 100%;
-  min-height: 100vh;
   background-color: #f1f1f1;
 }
 
 .about-container {
   display: flex;
   flex-direction: column;
-  gap: 60px;
 }
 
 .about-title {
   color: #152d41;
+  margin-bottom: 70px;
 }
 
 .employee {
@@ -149,13 +147,13 @@ nav {
   gap: 60px;
 }
 
-.employee:nth-of-type(odd) {
-  flex-direction: row;
-}
-
 .employee:nth-of-type(even) {
   flex-direction: row-reverse;
   text-align: right;
+}
+
+.employee:nth-of-type(1) {
+  margin-bottom: 20px;
 }
 
 .employee-photo-wrapper {
@@ -182,18 +180,17 @@ nav {
 
 .offer {
   width: 100%;
-  min-height: 100vh;
   background-color: #405d78;
 }
 
 .offer-container {
   display: flex;
   flex-direction: column;
-  gap: 60px;
 }
 
 .offer-title {
   color: #ffffff;
+  margin-bottom: 70px;
 }
 
 .service {
